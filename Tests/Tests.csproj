@@ -62,9 +62,9 @@
     <Content Include="AuthoringTests.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BPrint\BPrintHelper.csproj">
+    <ProjectReference Include="..\BPrint\BTPrintHelper.csproj">
       <Project>{553C6DFF-EE1E-4ADA-8B38-FFCA1370DD4C}</Project>
-      <Name>BPrintHelper</Name>
+      <Name>BTPrintHelper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />

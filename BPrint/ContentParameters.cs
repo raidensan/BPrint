@@ -3,17 +3,30 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BPrint
+namespace WirelessPrintHelper
 {
-    public class ContentParameters : BPrint.IContentParameters
+    /// <summary>
+    /// Used to store content parameters
+    /// </summary>
+    public class ContentParameters : IContentParameters
     {
+        /// <summary>
+        /// Gets parameter dictionary
+        /// </summary>
         public Dictionary<string, string> Parameters { get; private set; }
 
+        /// <summary>
+        /// Creates a new instance of ContentParameters
+        /// </summary>
         public ContentParameters()
         {
             Parameters = new Dictionary<string, string>();
         }
 
+        /// <summary>
+        /// Creates a new instance of ContentParameters with given paramDictionary
+        /// </summary>
+        /// <param name="paramDictionary">Parameter dictionary</param>
         public ContentParameters(Dictionary<string, string> paramDictionary)
         {
             if (paramDictionary == null)
@@ -21,6 +34,11 @@ namespace BPrint
             Parameters = paramDictionary;
         }
 
+        /// <summary>
+        /// Add a new entry to parameter dictionary
+        /// </summary>
+        /// <param name="paramName">Name of parameter</param>
+        /// <param name="paramValue">Value of parameter</param>
         public void Add(string paramName, string paramValue)
         {
             if (string.IsNullOrEmpty(paramName))

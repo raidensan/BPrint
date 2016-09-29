@@ -1,10 +1,12 @@
 ﻿using System;
-namespace BPrint
+namespace WirelessPrintHelper
 {
-    interface IFileContentReader
+    public interface IFileContentReader
     {
         string Filename { get; }
+        byte[] ReadAllAsByte();
         byte[] ReadAllAsByte(string fileName);
+        string ReadAllAsString();
         string ReadAllAsString(string fileName);
     }
 }

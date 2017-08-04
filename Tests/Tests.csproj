@@ -55,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContentParametersTest.cs" />
+    <Compile Include="ContentReplacerTest.cs" />
+    <Compile Include="Fake_FileContentReader.cs" />
     <Compile Include="FileContentReaderContentParameterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

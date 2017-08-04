@@ -79,8 +79,11 @@ This approach is susitable for payloads that are similar to each other. Consider
 In parameterized version we have replaced values of our fields with a placeholder.
 
 |Value|Placeholder|
+
 |My Sample Product|<ProductName>|
+
 |PC-01|<StockCode>|
+
 |8693332221117|<Barcode>|
 
 By doing this we have created a template for our printing task. Now nefore printing we can dynamically set desired values.

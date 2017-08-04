@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTPrintSample1", "BTPrintSa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{C1103745-6B2C-4855-91FF-72DECADF71FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintSample_ParameterizedContent", "PrintSample_ParameterizedContent\PrintSample_ParameterizedContent.csproj", "{5ED17411-85B0-41E5-97A4-0A7D83DFE255}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Raidensan.BPrint.vsmdi
@@ -38,11 +40,18 @@ Global
 		{C1103745-6B2C-4855-91FF-72DECADF71FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1103745-6B2C-4855-91FF-72DECADF71FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1103745-6B2C-4855-91FF-72DECADF71FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED17411-85B0-41E5-97A4-0A7D83DFE255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED17411-85B0-41E5-97A4-0A7D83DFE255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED17411-85B0-41E5-97A4-0A7D83DFE255}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5ED17411-85B0-41E5-97A4-0A7D83DFE255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED17411-85B0-41E5-97A4-0A7D83DFE255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED17411-85B0-41E5-97A4-0A7D83DFE255}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{53926F17-96F1-486F-90DC-84BE83F60FFF} = {4875FE80-AB48-4E95-9899-F8D0B90B17A5}
+		{5ED17411-85B0-41E5-97A4-0A7D83DFE255} = {4875FE80-AB48-4E95-9899-F8D0B90B17A5}
 	EndGlobalSection
 EndGlobal

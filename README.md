@@ -81,8 +81,8 @@ In parameterized version we have replaced values of our fields with a placeholde
 | Value | Placeholder |
 |---|---|
 | My Sample Product | \<ProductName\> |
-| PC-01 | "<StockCode>" |
-| 8693332221117 | "<Barcode>" |
+| PC-01 | \<StockCode\> |
+| 8693332221117 | \<Barcode\> |
 
 By doing this we have created a template for our printing task. Now nefore printing we can dynamically set desired values.
 

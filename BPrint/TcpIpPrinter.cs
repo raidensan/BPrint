@@ -117,5 +117,40 @@ namespace WirelessPrintHelper
 
             Print(reader.ReadAllAsByte());
         }
+
+        #region IWirelessPrinter Members
+
+
+        public void BeginPrint(string toPrint)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BeginPrint(string toBeginPrint, IContentParameters parameters)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BeginPrint(byte[] toBeginPrint)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BeginPrint(byte[] toBeginPrint, IContentParameters parameters)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BeginPrint(FileInfo payloadFile)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BeginPrint(FileInfo payloadFile, Encoding fileEncoding, IContentParameters parameters)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
     }
 }

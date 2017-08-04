@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO.Ports;
 using System.IO;
+using System.Threading;
 
 namespace WirelessPrintHelper
 {
@@ -82,7 +83,7 @@ namespace WirelessPrintHelper
                 SerialPort.Write(toPrint, 0, toPrint.Length);
                 SerialPort.Close();
             }
-            
+            OnAfterPrint(EventArgs.Empty);
         }
 
         /// <summary>
@@ -265,5 +266,42 @@ namespace WirelessPrintHelper
             if (result != null)
                 Print(result);
         }
+
+        public void BeginPrint(string toPrint)
+        {
+            var t = new Thread(() => Print(toPrint));
+            t.Start();
+        }
+
+        public void BeginPrint(string toPrint, IContentParameters parameters)
+        {
+            var t = new Thread(() => Print(toPrint, parameters));
+            t.Start();
+        }
+
+        public void BeginPrint(byte[] toPrint)
+        {
+            var t = new Thread(() => Print(toPrint));
+            t.Start();
+        }
+
+        public void BeginPrint(byte[] toPrint, IContentParameters parameters)
+        {
+            var t = new Thread(() => Print(toPrint, parameters));
+            t.Start();
+        }
+
+        public void BeginPrint(FileInfo payloadFile)
+        {
+            var t = new Thread(() => Print(payloadFile));
+            t.Start();
+        }
+
+        public void BeginPrint(FileInfo payloadFile, Encoding fileEncoding, IContentParameters parameters)
+        {
+            var t = new Thread(() => Print(payloadFile, fileEncoding, parameters));
+            t.Start();
+        }
+
     }
 }
